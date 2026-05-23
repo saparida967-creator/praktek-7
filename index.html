@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Mahasiswa - Praktek CSS Minggu 6</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="container navbar">
+        <div class="brand">
+          <p class="brand-label">Praktek 6 - Template dan Layout</p>
+          <h1>Portofolio Mahasiswa</h1>
+          <p class="brand-subtitle">Belajar menyusun halaman website yang rapi dengan CSS.</p>
+        </div>
+
+        <nav class="menu">
+          <a href="#tentang">Tentang</a>
+          <a href="#skill">Skill</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <p class="section-label">Minggu 6</p>
+          <h2>Template yang baik membuat halaman lebih mudah dibaca dan lebih nyaman dilihat.</h2>
+          <p>
+            Pada latihan ini kita melanjutkan materi minggu 5. Jika minggu lalu fokus pada selector,
+            background, dan table, sekarang kita belajar menyusun bagian-bagian website dengan
+            Flexbox dan Grid.
+          </p>
+          <a class="button-primary" href="#skill">Lihat contoh layout</a>
+        </div>
+
+        <div class="hero-card">
+          <h3>Target latihan</h3>
+          <ul>
+            <li>Membuat header, menu, konten, dan footer</li>
+            <li>Menyusun 2 kolom dengan Flexbox</li>
+            <li>Membuat kartu sejajar dengan CSS Grid</li>
+            <li>Menambahkan tampilan yang tetap rapi di layar kecil</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about-layout" id="tentang">
+        <div class="profile-box">
+          <div class="photo-container">
+            <div class="profile-photo-wrapper">
+              <img class="profile-photo" src="foto-saya.jpeg" alt="Foto Mahasiswa">
+            </div>
+          </div>
+          <h3>Saparida</h3>
+          <p>S1 Teknologi Informasi</p>
+          <p>Semester 4</p>
+        </div>
+
+        <div class="about-box">
+          <p class="section-label">Tentang Saya</p>
+          <h2>Belajar layout dimulai dari menyusun elemen yang sederhana.</h2>
+          <p>
+            Saya sedang belajar membuat tampilan website yang tidak hanya berwarna, tetapi juga
+            tertata. Pada bagian ini, foto profil dan teks diletakkan berdampingan agar isi halaman lebih
+            seimbang.
+          </p>
+          <p>
+            Layout seperti ini sering dipakai untuk profil, halaman produk, artikel, dan landing page.
+            Kuncinya adalah memahami elemen induk, elemen anak, dan properti CSS yang mengatur
+            jaraknya.
+          </p>
+          <div class="note-box">
+            Catatan: template adalah susunan besar halaman, sedangkan layout adalah cara setiap bagian
+            ditempatkan di dalam template tersebut.
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skill">
+        <div class="section-heading">
+          <p class="section-label">Layout Grid</p>
+          <h2>Contoh kartu yang disusun dengan CSS Grid</h2>
+          <p>
+            Bagian ini menampilkan empat kartu dengan ukuran seimbang. Saat layar mengecil,
+            susunannya akan berubah menjadi ke bawah.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-card card-1">
+            <h3>HTML</h3>
+            <p>HTML dipakai untuk membuat kerangka halaman seperti header, section, artikel, dan footer.</p>
+          </article>
+          <article class="info-card card-2">
+            <h3>Flexbox</h3>
+            <p>Flexbox cocok untuk menu horizontal, dua kolom, tombol sejajar, dan konten yang perlu rata.</p>
+          </article>
+          <article class="info-card card-3">
+            <h3>Grid</h3>
+            <p>Grid cocok untuk kartu, galeri, dan susunan beberapa kolom dengan ukuran yang konsisten.</p>
+          </article>
+          <!-- KARTU TAMBAHAN (TUGAS 3) -->
+          <article class="info-card card-4">
+            <div class="badge-new">New!</div>
+            <h3>CSS Modern</h3>
+            <p>Dengan CSS modern seperti Flexbox dan Grid, kita bisa membuat layout yang rapi dan responsif dengan mudah.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-panel" id="kontak">
+        <div class="contact-text">
+          <p class="section-label">Kontak</p>
+          <h2>Bagian penutup halaman juga perlu layout yang rapi.</h2>
+          <p>
+            Pada contoh ini, teks kontak dan tombol disusun berdampingan menggunakan Flexbox.
+            Di layar kecil, keduanya akan turun ke bawah agar tetap nyaman dibaca.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button-secondary" href="mailto:mahasiswa@example.com">saparida.967@gmail.com</a>
+          <a class="button-secondary" href="#">fariida.nzw</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <p>Pemrograman Web - Minggu 6</p>
+        <p>Template dan Layout dengan CSS</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,539 @@
+/* RESET & DASAR */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: #fef9f0;
+  color: #2c2c2c;
+  line-height: 1.5;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+main.container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.section-label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #c86a8f;
+  margin-bottom: 8px;
+}
+
+/* HEADER & MENU - GRADIENT PELANGI PASTEL LEMBUT */
+.site-header {
+  background: linear-gradient(135deg, 
+    #FFB3BA 0%,
+    #FFDFB3 20%,
+    #FFFFB3 40%,
+    #B3FFB3 60%,
+    #B3DFFF 80%,
+    #E0B3FF 100%
+  );
+  padding: 32px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.brand-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: rgba(44, 44, 44, 0.12);
+  backdrop-filter: blur(4px);
+  font-size: 12px;
+  font-weight: 600;
+  color: #4a2c3a;
+}
+
+.brand h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: #3d2b3a;
+}
+
+.brand-subtitle {
+  color: #4a3a44;
+  max-width: 560px;
+  font-weight: 500;
+}
+
+.menu {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #3d2b3a;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 32px;
+}
+
+.hero-text,
+.hero-card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-text:hover,
+.hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-text {
+  flex: 2;
+  padding: 32px;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #2c2c2c;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.hero-card {
+  flex: 1;
+  padding: 28px;
+  border: 1px solid #FFB3BA;
+  background: #fffafc;
+}
+
+.hero-card h3 {
+  color: #c86a8f;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.hero-card ul {
+  padding-left: 20px;
+}
+
+.hero-card li {
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+/* TOMBOL */
+.button-primary,
+.button-secondary {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+}
+
+.button-primary {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #c86a8f, #e0a3b8);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(200, 106, 143, 0.3);
+}
+
+.button-secondary {
+  padding: 10px 22px;
+  background: #ffffff;
+  color: #c86a8f;
+  border: 1.5px solid #e0b3c4;
+}
+
+.button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(200, 106, 143, 0.4);
+}
+
+.button-secondary:hover {
+  transform: translateY(-2px);
+  background: #fff5f7;
+  border-color: #c86a8f;
+}
+
+/* TENTANG SAYA */
+.about-layout {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  margin-bottom: 32px;
+}
+
+.profile-box,
+.about-box {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.profile-box:hover,
+.about-box:hover {
+  transform: translateY(-3px);
+}
+
+.profile-box {
+  width: 260px;
+  flex-shrink: 0;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.photo-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #FFB3BA, #E0B3FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.profile-photo-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-box h3 {
+  margin-bottom: 8px;
+  color: #2c2c2c;
+}
+
+.profile-box p {
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.about-box {
+  flex: 1;
+  padding: 32px;
+}
+
+.about-box h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #2c2c2c;
+}
+
+.about-box p {
+  margin-bottom: 16px;
+  color: #4a4a4a;
+}
+
+.note-box {
+  padding: 16px 20px;
+  border-left: 5px solid #c86a8f;
+  background: #fef5f8;
+  border-radius: 16px;
+  color: #3a3a3a;
+  margin-top: 8px;
+}
+
+/* SKILLS SECTION - GRID KARTU */
+.skills-section {
+  margin-bottom: 32px;
+}
+
+.section-heading {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 24px;
+}
+
+.section-heading h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+.section-heading p {
+  color: #5a5a5a;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.info-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+}
+
+.info-card:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  pointer-events: none;
+  animation: glowPulse 1s ease-out;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(200, 106, 143, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(200, 106, 143, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(200, 106, 143, 0);
+  }
+}
+
+.badge-new {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #c86a8f, #e0a3b8);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* WARNA KARTU */
+.card-1 {
+  border-top: 5px solid #FFB3BA;
+  background: linear-gradient(180deg, #ffffff 0%, #FFF5F5 100%);
+}
+.card-1 h3 { color: #d47a8a; }
+
+.card-2 {
+  border-top: 5px solid #FFDFB3;
+  background: linear-gradient(180deg, #ffffff 0%, #FFFBF5 100%);
+}
+.card-2 h3 { color: #d4a06a; }
+
+.card-3 {
+  border-top: 5px solid #B3FFB3;
+  background: linear-gradient(180deg, #ffffff 0%, #F5FFF5 100%);
+}
+.card-3 h3 { color: #5a9e5a; }
+
+.card-4 {
+  border-top: 5px solid #B3DFFF;
+  background: linear-gradient(180deg, #ffffff 0%, #F5F8FF 100%);
+}
+.card-4 h3 { color: #5a8abd; }
+
+.info-card h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.info-card p {
+  color: #4a4a4a;
+  line-height: 1.5;
+}
+
+/* KONTAK PANEL */
+.contact-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  padding: 30px 32px;
+  border: 1px solid #FFDFB3;
+}
+
+.contact-text {
+  max-width: 620px;
+}
+
+.contact-text h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+  color: #2c2c2c;
+}
+
+.contact-text p {
+  color: #5a5a5a;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* FOOTER */
+.site-footer {
+  background: linear-gradient(135deg, 
+    #E0B3FF 0%,
+    #B3DFFF 25%,
+    #B3FFB3 50%,
+    #FFFFB3 75%,
+    #FFDFB3 100%
+  );
+  color: #3d2b3a;
+  padding: 20px 0;
+  margin-top: 16px;
+}
+
+.footer-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero,
+  .about-layout,
+  .contact-panel,
+  .footer-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-box {
+    width: 100%;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h2,
+  .about-box h2,
+  .section-heading h2,
+  .contact-text h2 {
+    font-size: 24px;
+  }
+
+  .contact-actions {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+  
+  .brand {
+    text-align: center;
+  }
+
+  .profile-photo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
